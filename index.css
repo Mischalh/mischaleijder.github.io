@@ -18,6 +18,10 @@ button:hover {
     opacity: 80%;
 }
 
+a:hover {
+    opacity: 80%;
+}
+
 /* nav */
 nav {
     display: flex;
@@ -249,9 +253,6 @@ nav {
     font-size: 16px;
 }
 
-.mijn-werk-block-btn:hover {
-    opacity: 50%;
-}
 
 /* call to action section */
 .cta-container {
@@ -298,7 +299,8 @@ nav {
 
 /* footer */
 .footer-container {
-    background-image: linear-gradient(to bottom, #4831D4, #CCF381);
+    margin-top: 100px;
+    background-image: linear-gradient(to bottom, #4831D4, #d2e6ac);
 }
 
 .footer-content {
@@ -310,15 +312,33 @@ nav {
 
 .footer-info {
     width: 250px;
+    margin-top: 10px;
+}
+
+.footer-title {
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    margin: 5px 0;
 }
 
 .footer-text a{
     color: #fff;
 }
 
-.footer-text a:hover{
-    opacity: 80%;
+#footer-line {
+    border: 1px solid #ffffff;
+    width: 80%;
+    margin: auto;
+    opacity: 70%;
 }
 
+#footer-rechten {
+    width: 70%;
+    margin: auto;
+    padding: 10px 0;
+    color: #ffffff96;
+}
 
 
