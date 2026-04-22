@@ -362,7 +362,6 @@ nav {
 .header-pages {
     background-color: var(--secondary-color);
     border-bottom: #CCF381 solid 25px;
-    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -370,6 +369,7 @@ nav {
     color: #fff;
     text-align: center;
     gap: 25px;
+    padding: 100px;
 }
 
 .header-pages-title {
