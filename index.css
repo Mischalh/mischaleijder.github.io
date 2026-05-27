@@ -65,6 +65,10 @@ nav {
     font-weight: bold;
 }
 
+.contactBtn-active {
+    opacity: 90%;
+}
+
 /* hero */
 .hero {
     background: #4831D4;
@@ -210,31 +214,36 @@ nav {
     box-shadow: 5px 5px 20px rgb(209, 209, 209);
 }
 
+.secondary-color-background {
+    background-color: var(--secondary-color);
+}
+
+.main-color-background {
+    background-color: var(--main-color);
+}
 
 
-.mijn-werk-block-img {
-    background-color: #4831D4;
-    height: 260px;
-    width: 440px;
+.mijn-werk-block-img-container {
+    max-width: 500px;
+    height: 200px;
+    padding: 10px;
+    opacity: 0.7;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    gap: 5px;
 }
 
-.schippers-block-img {
-    background-image: url(img/logo\ schippers2\ wit\ 1.svg);
-    background-position: center;
-    background-size: cover;
-    height: 100px;
+.mijn-werk-block-img {
+    padding: 30px;
+    width: 100%;
+    pointer-events: none;
 }
 
-.mijn-werk-block-img-text {
-    font-weight: lighter;
+.kieskoers-img {
+    height: 100%;
 }
 
 .mijn-werk-block-content {
@@ -242,8 +251,7 @@ nav {
 }
 
 .mijn-werk-block-content  {
-   
-    max-width: 400px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -252,6 +260,7 @@ nav {
 
 .mijn-werk-block-perks {
     display: flex;
+    align-items: center;
     gap: 8px;
 }
 .mijn-werk-block-content-perk {
@@ -269,6 +278,18 @@ nav {
     font-size: 16px;
 }
 
+@media (max-width: 768px) {
+    .mijn-werk-block-img-content {
+        font-size: 20px;
+        display: flex;
+        align-items: start;
+    }
+
+    .mijn-werk-block-content-perk {
+        font-size: 9px;
+    }
+    
+}
 
 /* call to action section */
 .cta-container {
@@ -411,13 +432,17 @@ nav {
 }
 
 .over-mij-title {
+    color: var(--main-color);
     margin-bottom: 20px;
 }
 
+.over-mij-img-container {
+    width: 50%;
+}
 
 .over-mij-img {
-   width: 70%;
-   height: 600px;
+    width: 50%;
+    height: 50%;
     border-radius: 20px;
     border: var(--secondary-color) 5px solid;
 }
@@ -489,7 +514,9 @@ nav {
 
 .pages-werk-logo-img {
     width: 400px;
-    background-color: #615997;
+    border: var(--main-color) solid 5px;
+    background-color: var(--secondary-color);
+    opacity: 0.7;
     padding: 50px 30px;
     border-radius: 50px;
 }
@@ -882,27 +909,77 @@ nav {
     display: flex;
     justify-content: space-between;
     gap: 100px;
-    background-color: var(--white-background-color);
+    background-color: #cbf3816b;
     padding: 100px 140px;
     align-items: center;
 }
 
-.contact-content {
-    width: 50%;
+
+.contact-socials-title {
+    font-size: 28px;
+    color: var(--secondary-color);
+    margin-bottom: 24px;
 }
 
-.contact-links {
+.contact-socials-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
-.contact-link {
+.contact-socials-link {
     display: flex;
-    gap: 5px;
+    align-items: center;
+    gap: 10px;
     color: var(--secondary-color);
     font-size: 18px;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
 
+.contact-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
 
+.contact-form-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.contact-form-input {
+    padding: 12px 16px;
+    border: 2px solid #e0e2f0;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.contact-form-input:focus {
+    border-color: var(--secondary-color);
+}
+
+.contact-form-textarea {
+    height: 140px;
+    resize: vertical;
+}
+
+.contact-form-btn {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 24px;
+    border-radius: 8px;
+    align-self: flex-start;
+}

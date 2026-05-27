@@ -30,18 +30,39 @@
 
 
 
-                 <!-- over mij content -->
-          <main class="contact-container">
-            <div class="contact-content">
-                <h1 class="contact-title">Laten we in contact komen</h1>
-            <p class="contact-text">De contactpagina is ontworpen om snel, duidelijk en toegankelijk te zijn op elk apparaat. Of je nu een samenwerking zoekt, een website nodig hebt of hulp wilt bij je branding: ik help je graag verder.</p>
-                    
-            </div>
+                 <!-- contact content -->
+<main class="contact-container">
+
+    <form class="contact-form" action="https://formspree.io/f/JOUW_FORM_ID" method="POST">
+        <div class="contact-form-group">
+            <label class="contact-form-label" for="naam">Naam</label>
+            <input class="contact-form-input" type="text" id="naam" name="naam" placeholder="Jouw naam" required>
+        </div>
+        <div class="contact-form-group">
+            <label class="contact-form-label" for="email">E-mail</label>
+            <input class="contact-form-input" type="email" id="email" name="email" placeholder="Jouw e-mailadres" required>
+        </div>
+        <div class="contact-form-group">
+            <label class="contact-form-label" for="onderwerp">Onderwerp</label>
+            <input class="contact-form-input" type="text" id="onderwerp" name="onderwerp" placeholder="Waar gaat het over?" required>
+        </div>
+        <div class="contact-form-group">
+            <label class="contact-form-label" for="bericht">Bericht</label>
+            <textarea class="contact-form-input contact-form-textarea" id="bericht" name="bericht" placeholder="Jouw bericht..." required></textarea>
+        </div>
+        <button class="contact-form-btn" type="submit">Verstuur bericht <i class="fa fa-arrow-right"></i></button>
+    </form>
+         
             
-            <ul class="contact-links">
-                <li class="contact-link"><i class="fa-solid fa-envelope"></i>Mischahavenstrooml@gmail.com</li>
-                 <li class="contact-link"><i class="fa-solid fa-phone"></i>0610090674</li>
-            </ul>
+            <section class="contact-socials">
+    <h2 class="contact-socials-title">Vind mij online</h2>
+    <ul class="contact-socials-list">
+        <li><a class="contact-socials-link" href="https://nl.linkedin.com/in/mischa-leider-havenstroom-35ab63264" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+        <li><a class="contact-socials-link" href="https://github.com/Mischalh" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a></li>
+        <li><a class="contact-socials-link" href="mailto:mischalhavenstroom@gmail.com"><i class="fa-solid fa-envelope"></i>mischalhavenstroom@gmail.com</a></li>
+        <li><a class="contact-socials-link" href="tel:0651090674"><i class="fa-solid fa-phone"></i>0651090674</a></li>
+    </ul>
+</section>
        
           </main>
 
@@ -67,7 +88,7 @@
 
                         <ul class="footer-section">
                             <h4 class="footer-title">Contact</h4>
-                                   <li class="footer-text">Mischahavenstrooml@gmail.com</li>
+                                   <li class="footer-text">Mischalhavenstroom@gmail.com</li>
                                     <li class="footer-text">0651090674</li>
                         </ul>
                 </div>
